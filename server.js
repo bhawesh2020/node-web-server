@@ -36,10 +36,16 @@ hbs.registerHelper('screamIt',(text)=>{
 });
 
 app.get('/',(request,response)=>{
-    //response.send('<h1>Hello world</h1>');
     response.render('home.hbs',{
         pageTitle:'Home page',
         welcomeMessage:'Welcome to Home Page'
+    });
+});
+
+app.get('/projects',(request,response)=>{
+    response.render('projects.hbs',{
+        pageTitle:'Projects page',
+        welcomeMessage:'This is portfolio page'
     });
 });
 
