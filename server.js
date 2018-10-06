@@ -51,7 +51,8 @@ app.get('/projects',(request,response)=>{
 
 app.get('/about',(request,response)=>{
     response.render('about.hbs',{
-        pageTitle:'About page'
+        pageTitle:'About page',
+        port: port
     });
 });
 
